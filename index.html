@@ -1,149 +1,171 @@
 <!doctype html>
 <html lang="en" class="h-full">
-<head>
+ <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Provence Wine Country</title>
-
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-
-  <!-- Fonts -->
+  <script src="/_sdk/element_sdk.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Josefin+Sans:wght@300;400&display=swap"
-    rel="stylesheet"
-  >
-
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;family=Josefin+Sans:wght@300;400&amp;display=swap" rel="stylesheet">
   <style>
     html, body {
       height: 100%;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
     }
-
     .app-wrapper {
       min-height: 100%;
       width: 100%;
-      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSPPitXJSkq6X1KsrNKEiUXFxwGXKQ8E4hHyRMMw2LVw&s=10');
+      background-image: url('https://cf.bstatic.com/xdata/images/hotel/max1024x768/349292871.jpg?k=d8500f98fea09bfcea18681bde34f0bb4c310224b3443af365537feab4ca594e&o=');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       position: relative;
     }
-
     .app-wrapper::before {
       content: '';
       position: absolute;
       inset: 0;
       background: linear-gradient(
         to bottom,
-        rgba(89, 61, 43, 0.4) 0%,
-        rgba(89, 61, 43, 0.6) 50%,
-        rgba(89, 61, 43, 0.7) 100%
+        rgba(89, 61, 43, 0.2) 0%,
+        rgba(89, 61, 43, 0.3) 50%,
+        rgba(89, 61, 43, 0.4) 100%
       );
     }
-
     .content-container {
       position: relative;
       z-index: 1;
     }
-
     .font-heading {
       font-family: 'Cormorant Garamond', Georgia, serif;
     }
-
     .font-body {
       font-family: 'Josefin Sans', sans-serif;
     }
-
     .btn-provence {
       backdrop-filter: blur(8px);
       transition: all 0.3s ease;
       border: 1px solid rgba(255, 255, 255, 0.3);
     }
-
     .btn-provence:hover {
       transform: translateY(-2px);
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
     }
-
     .decorative-line {
       width: 80px;
       height: 1px;
       background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
     }
   </style>
-</head>
-
-<body class="h-full">
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full">
   <div class="app-wrapper">
-    <div class="content-container flex flex-col items-center justify-center min-h-full px-6 py-12">
-
-      <!-- Header Section -->
-      <div class="text-center mb-12">
-        <p id="subtitle" class="font-body text-amber-100/80 tracking-[0.3em] uppercase text-sm mb-4">
-          Bienvenue en
-        </p>
-
-        <h1 id="main-title" class="font-heading text-5xl md:text-6xl lg:text-7xl font-semibold text-white mb-6 leading-tight">
-          Provence
-        </h1>
-
-        <div class="flex items-center justify-center gap-4">
-          <div class="decorative-line"></div>
-
-          <svg class="w-6 h-6 text-amber-200/70" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12 2C12 2 8 6 8 10c0 2.21 1.79 4 4 4s4-1.79 4-4c0-4-4-8-4-8zm0 10c-1.1 0-2-.9-2-2 0-1.86 2-4.46 2-4.46s2 2.6 2 4.46c0 1.1-.9 2-2 2z" />
-            <path d="M12 16c-4 0-8 2-8 4v2h16v-2c0-2-4-4-8-4z" />
-          </svg>
-
-          <div class="decorative-line"></div>
-        </div>
-      </div>
-
-      <!-- Navigation Buttons -->
-      <nav class="flex flex-col gap-4 w-full max-w-sm">
-        <a id="btn-1"
-           href="REPLACE_ME_WITH_URL_1"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="btn-provence bg-white/15 hover:bg-white/25 text-white font-body tracking-wider text-center py-4 px-8 rounded-sm">
-          Itinerary
-        </a>
-
-        <a id="btn-2"
-           href="REPLACE_ME_WITH_URL_2"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="btn-provence bg-white/15 hover:bg-white/25 text-white font-body tracking-wider text-center py-4 px-8 rounded-sm">
-          Detailed Information
-        </a>
-
-        <a id="btn-3"
-           href="REPLACE_ME_WITH_URL_3"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="btn-provence bg-white/15 hover:bg-white/25 text-white font-body tracking-wider text-center py-4 px-8 rounded-sm">
-          Arrangements
-        </a>
-
-        <a id="btn-4"
-           href="REPLACE_ME_WITH_URL_4"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="btn-provence bg-white/15 hover:bg-white/25 text-white font-body tracking-wider text-center py-4 px-8 rounded-sm">
-          Google Drive
-        </a>
-      </nav>
-
-      <!-- Footer Accent -->
-      <div class="mt-12 text-center">
-        <p class="font-heading italic text-amber-100/60 text-lg">~ La vie est belle ~</p>
-      </div>
+   <div class="content-container flex flex-col items-center justify-center min-h-full px-6 py-12"><!-- Header Section -->
+    <div class="text-center mb-12">
+     <p id="subtitle" class="font-body text-amber-100/80 tracking-[0.3em] uppercase text-sm mb-4">Bienvenue en</p>
+     <h1 id="main-title" class="font-heading text-5xl md:text-6xl lg:text-7xl font-semibold text-white mb-6 leading-tight">Provence</h1>
+     <div class="flex items-center justify-center gap-4">
+      <div class="decorative-line"></div>
+      <svg class="w-6 h-6 text-amber-200/70" viewbox="0 0 24 24" fill="currentColor"><path d="M12 2C12 2 8 6 8 10c0 2.21 1.79 4 4 4s4-1.79 4-4c0-4-4-8-4-8zm0 10c-1.1 0-2-.9-2-2 0-1.86 2-4.46 2-4.46s2 2.6 2 4.46c0 1.1-.9 2-2 2z" /> <path d="M12 16c-4 0-8 2-8 4v2h16v-2c0-2-4-4-8-4z" />
+      </svg>
+      <div class="decorative-line"></div>
+     </div>
+    </div><!-- Navigation Buttons -->
+    <nav class="flex flex-col gap-4 w-full max-w-sm"><a id="btn-1" href="REPLACE_ME_WITH_URL_1" target="_blank" rel="noopener noreferrer" class="btn-provence bg-white/15 hover:bg-white/25 text-white font-body tracking-wider text-center py-4 px-8 rounded-sm"> Itinerary </a> <a id="btn-2" href="REPLACE_ME_WITH_URL_2" target="_blank" rel="noopener noreferrer" class="btn-provence bg-white/15 hover:bg-white/25 text-white font-body tracking-wider text-center py-4 px-8 rounded-sm"> Detailed Information </a> <a id="btn-3" href="REPLACE_ME_WITH_URL_3" target="_blank" rel="noopener noreferrer" class="btn-provence bg-white/15 hover:bg-white/25 text-white font-body tracking-wider text-center py-4 px-8 rounded-sm"> Arrangements </a> <a id="btn-4" href="REPLACE_ME_WITH_URL_4" target="_blank" rel="noopener noreferrer" class="btn-provence bg-white/15 hover:bg-white/25 text-white font-body tracking-wider text-center py-4 px-8 rounded-sm"> Google Drive </a>
+    </nav><!-- Footer Accent -->
+    <div class="mt-12 text-center">
+     <p class="font-heading italic text-amber-100/60 text-lg">~ La vie est belle ~</p>
     </div>
+   </div>
   </div>
-</body>
+  <script>
+    const defaultConfig = {
+      main_title: 'Provence',
+      subtitle: 'Bienvenue en',
+      button_1_text: 'Itinerary',
+      button_2_text: 'Detailed Information',
+      button_3_text: 'Arrangements',
+      button_4_text: 'Google Drive',
+      primary_color: '#ffffff',
+      background_color: '#593d2b',
+      font_family: 'Cormorant Garamond'
+    };
+
+    function onConfigChange(config) {
+      const mainTitle = document.getElementById('main-title');
+      const subtitle = document.getElementById('subtitle');
+      const btn1 = document.getElementById('btn-1');
+      const btn2 = document.getElementById('btn-2');
+      const btn3 = document.getElementById('btn-3');
+      const btn4 = document.getElementById('btn-4');
+
+      mainTitle.textContent = config.main_title || defaultConfig.main_title;
+      subtitle.textContent = config.subtitle || defaultConfig.subtitle;
+      btn1.textContent = config.button_1_text || defaultConfig.button_1_text;
+      btn2.textContent = config.button_2_text || defaultConfig.button_2_text;
+      btn3.textContent = config.button_3_text || defaultConfig.button_3_text;
+      btn4.textContent = config.button_4_text || defaultConfig.button_4_text;
+
+      // Apply font
+      const fontFamily = config.font_family || defaultConfig.font_family;
+      mainTitle.style.fontFamily = `${fontFamily}, Georgia, serif`;
+
+      // Apply colors
+      const textColor = config.primary_color || defaultConfig.primary_color;
+      mainTitle.style.color = textColor;
+      [btn1, btn2, btn3, btn4].forEach(btn => {
+        btn.style.color = textColor;
+        btn.style.borderColor = textColor + '4D';
+      });
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.primary_color || defaultConfig.primary_color,
+            set: (value) => {
+              config.primary_color = value;
+              window.elementSdk.setConfig({ primary_color: value });
+            }
+          }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => config.font_family || defaultConfig.font_family,
+          set: (value) => {
+            config.font_family = value;
+            window.elementSdk.setConfig({ font_family: value });
+          }
+        },
+        fontSizeable: undefined
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ['main_title', config.main_title || defaultConfig.main_title],
+        ['subtitle', config.subtitle || defaultConfig.subtitle],
+        ['button_1_text', config.button_1_text || defaultConfig.button_1_text],
+        ['button_2_text', config.button_2_text || defaultConfig.button_2_text],
+        ['button_3_text', config.button_3_text || defaultConfig.button_3_text],
+        ['button_4_text', config.button_4_text || defaultConfig.button_4_text]
+      ]);
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9cec0168724d78ea',t:'MTc3MTIzNDAwOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
